@@ -1,0 +1,55 @@
+body {
+	margin: 0 auto;
+	width: 800px;
+	background-color: #290;
+}
+
+.layout {
+	display: grid;
+	grid-template-columns: repeat(2, 420px);
+	justify-content: center;
+	justify-items: center;
+}
+
+.exercise img {
+	margin-top: 150px;
+	max-width: 100%;
+	display: block;
+}
+
+.bg {
+	margin-top: 150px;
+	width: 400px;
+	height: 300px;
+	background: #293462;
+}
+
+.circle {
+	width: 200px;
+	box-sizing: border-box;
+	height: 200px;
+	background-color: #fff1c1;
+	border-radius: 100px;
+	position: relative;
+	top: 50px;
+	left: 100px;
+	overflow: hidden;
+}
+
+.mountains {
+	width: 200px;
+	height: 200px;
+	background-color: #fe5f55;
+	position: absolute;
+	bottom: -34px;
+	right: -7px;
+	clip-path: polygon(
+		21% 57%,
+		66% 13%,
+		106% 49%,
+		103% 100%,
+		0 100%,
+		-4% 63%,
+		11% 47%
+	);
+}
