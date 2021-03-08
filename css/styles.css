@@ -1,0 +1,17 @@
+body {
+	margin: 2rem;
+	padding: 1rem;
+}
+
+.selects,
+.buttons {
+	margin: 0 auto;
+	width: 500px;
+}
+
+.button,
+.select {
+	margin: 2rem;
+	width: 100px;
+	height: 20px;
+}
