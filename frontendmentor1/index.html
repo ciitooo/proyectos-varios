@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link
+			rel="icon"
+			type="image/png"
+			sizes="32x32"
+			href="./images/favicon-32x32.png"
+		/>
+		<link rel="stylesheet" href="css/styles.css" />
+		<title>Frontend Mentor | Intro component with sign up form</title>
+	</head>
+	<body>
+		<main class="main">
+			<header class="begin-text">
+				<h1 class="text__title">Learn to code by watching others</h1>
+				<p class="text__paragraph">
+					See how experienced developers solve problems in real-time. Watching
+					scripted tutorials is great, but understanding how developers think is
+					invaluable.
+				</p>
+			</header>
+			<section class="container-form">
+				<div class="form__offer">
+					<span class="bold">Try it free 7 days </span>then $20/mo. thereafter
+				</div>
+				<form action="#" class="form" id="form">
+					<input
+						type="text"
+						id="name"
+						class="form__item"
+						placeholder="First Name "
+						value=""
+					/>
+					<p class="form__invalid--text">Nombre no válido</p>
+					<input
+						type="text"
+						id="lastname"
+						class="form__item"
+						placeholder="Last Name"
+					/>
+					<p class="form__invalid--text">Apellido no válido</p>
+					<input
+						type="email"
+						name="email"
+						id="email"
+						class="form__item"
+						placeholder="Email Address"
+					/>
+					<p class="form__invalid--text">Correo no válido</p>
+					<input
+						type="password"
+						id="password"
+						class="form__item"
+						placeholder="Password"
+					/>
+					<p class="form__invalid--text">Contraseña no válida</p>
+					<button type="submit" id="submit" class="form__submit">
+						CLAIM YOUR FREE TRIAL
+					</button>
+					<p class="form__paragraph">
+						By clicking the button you are agreeing to our
+						<a href="#" class="text-terms">Terms and Services</a>
+					</p>
+				</form>
+			</section>
+		</main>
+	</body>
+	<script src="scripts/scripts.js"></script>
+</html>
