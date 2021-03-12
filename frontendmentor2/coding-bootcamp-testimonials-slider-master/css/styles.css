@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;500;700&display=swap');
+
+body {
+	margin: 0;
+}
+
+main {
+	margin: 0 auto;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+.card-active {
+	display: flex;
+	flex-direction: row-reverse;
+}
+.container-img {
+	margin: 2em auto;
+	background-image: url('../assets/images/pattern-bg.svg');
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: contain;
+	background-origin: padding-box;
+	display: flex;
+	flex-direction: column;
+}
+
+.card__img {
+	max-width: 70%;
+	box-shadow: 0px 10px 100px -35px rgb(0 0 0);
+	position: relative;
+	top: 25px;
+	right: 10px;
+}
+
+.buttons {
+	display: flex;
+	position: relative;
+	top: -25px;
+	right: -13%;
+}
+
+.button {
+	padding: 0.5em;
+	background-color: rgb(255, 255, 255);
+}
+
+.button__prev {
+	padding-right: 2em;
+	border-bottom-left-radius: 30px;
+	border-top-left-radius: 30px;
+}
+.button__next {
+	padding-left: 2em;
+	border-bottom-right-radius: 30px;
+	border-top-right-radius: 30px;
+}
+
+.button__prev:hover,
+.button__next:hover {
+	background: rgb(202, 202, 202);
+	color: aliceblue;
+}
+
+/* -----------------------text--------------------------- */
+
+.text-container {
+	background-image: url('../assets/images/pattern-quotes.svg');
+	background-repeat: no-repeat;
+	background-position-x: 15%;
+	background-position-y: 30%;
+	background-size: 80px;
+	display: flex;
+	width: 50%;
+	justify-content: center;
+	flex-direction: column;
+	position: relative;
+	right: -90px;
+	top: 100px;
+}
+.card__text {
+	font-family: Inter, serif;
+	margin: 0;
+	color: hsl(240, 38%, 20%);
+	font-weight: 300;
+	text-align: left;
+	font-size: 3vh;
+}
+
+.card__subtitle {
+	text-align: left;
+	font-family: Inter;
+	font-size: 18px;
+	font-weight: 700;
+	color: rgb(32, 32, 70);
+}
+
+.card__job {
+	color: hsl(240, 18%, 77%);
+	margin-top: 0;
+	font-weight: 500;
+}
+
+/* ------------------------------------- */
+.card-inactive {
+	display: none;
+	flex-direction: row-reverse;
+}
+
+@media (max-width: 1210px) {
+	.card-active,
+	.card-inactive {
+		flex-direction: column;
+		align-items: center;
+	}
+	.text-container {
+		background-position-x: 50%;
+		background-position-y: 0;
+		width: auto;
+		position: static;
+		margin: 2em;
+	}
+
+	.card__text {
+		text-align: center;
+	}
+	main {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+	.container-img {
+		margin: 3em;
+		display: flex;
+		align-items: center;
+	}
+	.buttons {
+		right: 0;
+		top: -20vmax;
+	}
+}
+
+@media (max-width: 880px) {
+	.buttons {
+		top: -30vmax;
+	}
+}
+
+@media (max-width: 650px) {
+	.buttons {
+		top: -45vmax;
+	}
+}
+
+@media (max-width: 370px) {
+	.buttons {
+		top: -55vmax;
+	}
+}
